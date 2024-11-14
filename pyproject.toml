@@ -2,9 +2,7 @@
 name = "python-template"
 version = "0.1.0"
 description = "Python template for projects"
-authors = [
-    {name = "dimanu-py", email = "diegomtz126@gmail.com"},
-]
+authors = [{name = "dimanu-py", email = "diegomtz126@gmail.com"}]
 dependencies = []
 requires-python = "==3.12.*"
 readme = "README.md"
@@ -13,3 +11,7 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.dev-dependencies]
+lint = ["mypy>=1.13.0", "yapf>=0.43.0", "ruff>=0.7.4", "pre-commit>=4.0.1"]
+test = ["expects>=0.9.0", "doublex>=1.9.6.1", "pytest>=8.3.3", "doublex-expects>=0.7.1", "pytest-xdist>=3.6.1", "pytest-watch>=4.2.0"]
